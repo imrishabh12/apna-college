@@ -1,0 +1,276 @@
+/* :root {
+    --lightest: #f8f9fa;
+    --lighter: #e9ecef;
+    --light: #dee2e6;
+    --medium: #ced4da;
+    --mid: #adb5bd;
+    --dark: #6c757d;
+    --darker: #495057;
+    --darkest: #343a40;
+    --semiblack: #212529;
+ }
+ 
+ body[theme="lightest"]{
+     background-color: var(--lightest);
+ }
+ body[theme="mid"]{
+     background-color: var(--mid);
+ }
+ body[theme="darker"]{
+     background-color: var(--darker);
+ }
+ body[theme="semiblack"]{
+     background-color: var(--semiblack);
+ } */
+
+ ::-webkit-scrollbar{
+    width: 7px;
+ }
+ ::-webkit-scrollbar-track{
+    background-color: #000000;
+ }
+ ::-webkit-scrollbar-thumb{
+    background: #30393D;
+    border-radius: 3px;
+ }
+
+ @font-face {
+    font-family: NeueMachina;
+    src: url(./fonts/NeueMachina-Regular_DQCmjH1st.ttf);
+ }
+ @font-face {
+    font-family: NeueMachina-Thin;
+    src: url(./fonts/NeueMachina-Light_gwWCZxVuQl.ttf);
+ }
+ @font-face {
+    font-family: kajiro;
+    src: url(./fonts/kajiro/Kajiro\ Bold.ttf);
+ }
+ @font-face {
+    font-family: gilroy-medium;
+    src: url(./fonts/gilroy/Gilroy-Medium.ttf);
+ }
+ @font-face {
+    font-family: gilroy-thin;
+    src: url(./fonts/gilroy/Gilroy-Light.ttf);
+ }
+ @font-face {
+    font-family: gilroy-semibold;
+    src: url(./fonts/gilroy/Gilroy-SemiBold.ttf);
+ }
+ @font-face {
+    font-family: gilroy-bold;
+    src: url(./fonts/gilroy/Gilroy-Bold.ttf);
+ }
+
+ .nav{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+ }
+
+ @keyframes wave {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(50);
+        opacity: 0;
+        display: none;
+    }
+}
+
+.landingPage{
+    background: radial-gradient(circle at center top, #3d4051 1%, #000 40%);
+}
+.bg-diagonal-gradient {
+    background: linear-gradient(130deg, #ff4500, #1e90ff);
+}
+
+.animate-wave {
+    animation: wave 3s ease-in-out infinite;
+}
+
+/* page2  */
+
+.top{
+    perspective: 500px;
+    perspective-origin: top;
+}
+.bottom{
+    perspective: 500px;
+    perspective-origin: bottom;
+}
+.page2_left{
+    background: radial-gradient(ellipse at center , #3d4051 1%, #000 70%);
+}
+.h1:nth-child(1){
+    top: 0;
+}
+.h2:nth-child(1){
+    top: 0;
+}
+.h3:nth-child(1){
+    top: 0;
+}
+.h4:nth-child(1){
+    top: 0;
+}
+.icons img:nth-child(1){
+    top: 0;
+}
+
+.page3{
+    color: white;
+    background: radial-gradient(ellipse at center , #3d4051 1%, #000 60%);
+}
+.cursor{
+    mix-blend-mode: difference;
+    background: linear-gradient(rgba(0,0,255,0.2),rgba(0,0,200,0.2));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* page-4 */
+.page4{
+    color: white;
+    background: radial-gradient(ellipse at center , #3d4051 1%, #000 60%);
+}
+.cir{
+    background: url(https://miro.medium.com/v2/resize:fit:800/1*Nen1Wtbk00kzVdnHk-rs-g.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+.number-card{
+    color: white;
+    background: radial-gradient(ellipse at left ,   #3a3a3b 1%, #32323262 60%);
+}
+
+ /* courses section  */
+
+.courses{
+    background: radial-gradient(ellipse at center , #3d4051 1%, #000 60%);
+}
+.crs_img1{
+    background-image: url(./resources/coursecpp.jpeg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.crs_img2{
+    background-image: url(./resources/sigma.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+.crs_img3{
+    background-image: url(./resources/delta.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+.main-footer{
+    background: radial-gradient(ellipse at center , #3d4051 1%, #000 60%);
+}
+
+/* loader animation  */
+
+.loader{
+    background: radial-gradient(ellipse at center , #3d4051 1%, #000 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* placedstudent  */
+.studentplaced{
+    background: radial-gradient(ellipse at center , #3d4051 1%, #000 55%);
+}
+.card{
+    background-color: #5b5b5b1a;
+}
+
+
+
+
+.container{
+    transform-style: preserve-3d;
+    perspective: 5000px;
+}
+.page3_up{
+    transition: all 0.05s ease-out;
+    transform-style: preserve-3d;
+    filter: drop-shadow(0px 10px 18px rgba(255, 255, 255, 0.249));
+    background: radial-gradient(ellipse at center , #3d4051 1%, #000 55%);
+}
+
+
+/* glow on hover classes */
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff9100, #ff7300, #fffb00, #ff00c8, #ff7b00);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    
+  }
+  
+  .glow-on-hover:active {
+    color: #000
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 400% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  

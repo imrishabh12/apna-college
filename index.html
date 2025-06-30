@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Apna College</title>
+    <link rel="shortcut icon" href="./resources/ApnaCollage.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <div class="loader w-full h-screen sm:gap-10 gap-3 fixed z-[999] overflow-hidden">
+        <l-helix sm:size="90" size="45" speed="2.5" color="white"></l-helix>
+        <div class="logo text-center">
+            <h1 class="text-white font-[gilroy-bold] font-bold text-3xl">APNA</h1>
+            <h1 class="text-[#FFA511] font-[gilroy-bold] font-bold text-3xl leading-3">COLLEGE</h1>
+        </div>
+        <div class="flex items-center gap-2 text-white absolute top-[55%] left-[57%] ">
+            <h1 class="text-sm tracking-wider font-[NeueMachina-Thin]">Loding</h1>
+            <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/dotPulse.js"></script>
+            <l-dot-pulse size="22" speed="1.3" color="white"></l-dot-pulse>
+        </div>
+    </div>
+
+    <div id="main" class=" bg-black ">
+        <div
+            class="nav fixed px-4 w-[100vw] z-50 text-white flex sm:pl-10 sm:pr-5 py-2 justify-between sm:items-center ">
+            
+            <div class="logo text-center">
+                <h1 class="text-white font-[gilroy-bold] font-bold text-lg">APNA</h1>
+                <h1 class="text-[#FFA511] font-[gilroy-bold] font-bold text-lg leading-3">COLLEGE</h1>
+            </div>
+            <i class=" menu ri-menu-line sm:hidden text-2xl"></i>
+            <div
+                class="sm:flex hidden gap-5 items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-[gilroy-medium]">
+                <h1 class="text-md font-medium text-[#FFA511] cursor-pointer">Home </h1>
+                <h1 class="text-md font-medium hover:text-[#FFA511] cursor-pointer duration-500">Courses</h1>
+                <h1 class="text-md font-medium hover:text-[#FFA511] cursor-pointer duration-500">Explore</h1>
+                <h1 class="text-md font-medium hover:text-[#FFA511] cursor-pointer duration-500">Contact</h1>
+                <h1 class="text-md font-medium hover:text-[#FFA511] cursor-pointer duration-500">Article</h1>
+                <h1 class="text-md font-medium hover:text-[#FFA511] cursor-pointer duration-500">Tutorials</h1>
+            </div>
+            <div class="sm:flex hidden gap-2 items-center">
+                <i class="text-lg ri-search-line"></i>
+                <i class="text-lg ri-user-fill"></i>
+                <button
+                    class="px-5 py-2 ml-5 rounded bg-[#faa307] text-[var(--lightest)] border border-transparent text-md font-semibold hover:bg-black hover:text-orange-500 hover:border-orange-500">Get
+                    In Touch</button>
+            </div>
+            
+
+        </div>
+
+        <div class="side-nav-bar fixed sm:hidden h-screen w-full bg-white z-50 top-0 right-[-100%] text-2xl font-[NeueMachina-Thin]">
+                <h1 class=" ani text-5xl mt-5 ml-5">Menu</h1>
+                <div class="mx-auto w-[100  vw] h-[1px] border-[#dadada] border-t mt-2"></div> 
+                <h1 class=" ani mt-8 ml-5">Home</h1>
+                <h1 class=" ani mt-8 ml-5">About</h1>
+                <h1 class=" ani mt-8 ml-5">Profile</h1>
+                <h1 class=" ani mt-8 ml-5">Courses</h1>
+                <h1 class=" ani mt-8 ml-5">Classroom</h1>
+                <h1 class=" ani absolute top-7 right-10"><i class=" close ri-close-large-fill"></i></h1>
+                
+        </div>
+
+        <div class="landingPage sm:h-screen w-full h-[110vh] overflow-hidden pt-7">
+            <div class="sm:flex w-full h-screen relative">
+                <div class="left w-1/2 bg-zinc-100 bg-opacity-0 flex justify-center items-center relative">
+                    <div class="w-60 h-60 rounded-full relative flex justify-center items-center overflow-hidden">
+
+                    </div>
+                </div>
+                <div class="right w-1/2 flex items-center justify-center">
+
+                </div>
+                <div class="mainlanding absolute top-0 text-white h-[110vh]  sm:h-full w-[100%] z-10 sm:flex ">
+                    <div
+                        class="left sm:w-1/2 w-full sm:h-full h-[60vh] flex flex-col px-14 justify-center items-center">
+                        <h1 class="font-[NeueMachina] sm:text-6xl text-3xl">A Better<br>Learning Journey <br> Future <i
+                                class=" font-[NeueMachina-Thin] text-[#faa307]">Start</i> Here</h1>
+                        <h1 class="mt-5 text-sm font-light">Elevate your programming skills, solve challenges, and
+                            unlock the world of coding <br> possibilities.</h1>
+                        <div class="mt-6 sm:flex gap-5">
+                            <button class="px-4 py-2 bg-orange-400 rounded font-[gilroy-thin] font-medium ">Explore New
+                                Batches.</button>
+                            <button
+                                class="px-4 py-2 border sm:mt-0 mt-4 rounded hover:text-[#faa307] hover:border-orange-500 duration-500">Watch
+                                Tutorials <i class="ri-arrow-right-line"></i></button>
+                        </div>
+                    </div>
+                    <div class="right sm:w-1/2 w-full sm:h-full h-[50vh]  flex items-center justify-center">
+                        <div
+                            class="img-outer-circle relative flex items-center justify-center bg-diagonal-gradient sm:h-96 sm:w-96 h-80 w-80 rounded-full sm:mr-[-12vw]">
+                            <div class="img-inner-circle bg-white h-[93%] w-[93%] rounded-full ">
+                                <img class="h-full scale-[1.38] object-center" src="./resources/course1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page2 pt-10 sm:pt-0 h-[70vh] sm:h-[100vh] w-full overflow-hidden flex items-center justify-center">
+            <div class="photo relative w-[50%] h-[50%]  ">
+                <video autoplay loop muted class="h-[100%] mx-auto" src="./video.mp4"></video>
+                <div
+                    class="top h-36 w-[42vw]  absolute left-1/2 -translate-x-1/2 -top-[5vh] sm:-top-[16vh] flex justify-center flex-col items-center text-center ">
+
+                    <div class="up">
+                        <p class="uppercase text-white font-light text-sm">Learn & become the </p>
+                        <h1 class="uppercase text-white font-bold text-3xl sm:text-6xl">Top 1% software</h1>
+                    </div>
+                </div>
+                <div
+                    class="bottom h-36 w-[42vw] absolute left-1/2 -translate-x-1/2 -bottom-[3.5vh] sm:-bottom-[16vh] flex justify-center flex-col items-center text-center">
+
+                    <div class="down">
+                        <h1 class="uppercase text-white font-bold text-3xl sm:text-6xl">developer</h1>
+                        <p class="uppercase text-white font-light text-sm">INDIA'S MOST LOVED CODING COMMUNITY ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="coverup h-[40vh] w-full"></div> -->
+
+        <div class="page3 h-[40vh] sm:h-[50vh] w-full overflow-hidden ">
+            <!-- page3 down  -->
+            <div class="page3_down w-full font-[gilroy-medium] flex flex-col items-center justify-around px-20 h-[100%]">
+                <h1 class="sm:text-3xl text-[22px] font-semibold font-[NeueMachina-Thin] tracking-tight">Start your
+                    placement <span class="font-medium text-orange-500 italic">preparation today</span></h1>
+                <div class="sm:flex justify-between w-full sm:pb-16 pb-28 mt-10 sm:mt-0">
+                    <div class="mt-2 sm:mt-0">
+                        <h1 class="sm:text-lg text-center font-semibold "><i class="ri-group-fill mr-2"></i>5,000,000+
+                        </h1>
+                        <h1 class="sm:text-xl text-center font-semibold text-orange-500">Happy learners </h1>
+                    </div>
+                    <div class="mt-2 sm:mt-0">
+                        <h1 class="sm:text-lg text-center font-semibold "><i class="ri-heart-fill mr-2"></i>2 Crore +
+                        </h1>
+                        <h1 class="sm:text-xl text-center font-semibold text-orange-500">Monthly viewes</h1>
+                    </div>
+                    <div class="mt-2 sm:mt-0">
+                        <h1 class="sm:text-lg text-center font-semibold "><i class="ri-links-line mr-2"></i>100,000+
+                        </h1>
+                        <h1 class="sm:text-xl text-center font-semibold text-orange-500">New Monthly Subscribers</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="courses w-full min-h-[70vh] sm:px-20 px-3 py-5  flex flex-wrap justify-between text-white  overflow-hidden">
+            <div class="card sm:mt-0 mt-16  sm:h-full w-[100vw] sm:w-[25vw] bg-black rounded-lg text-center p-2">
+                <div class="crs_img1 bg-red-300 min-h-[28vh] ">
+                </div>
+                <div class="course_drescn mt-3">
+                    <h1 class="text-2xl font-semibold ">Learn C++ with Data Structures & <br> Algorithms in 4 Months!
+                    </h1>
+                    <p class="text-sm font-light leading-tight mb-4 mt-4">+ 100+ Hrs of learning & 300+ Qs <br>
+                        + Individual Doubt Solving TAs & Community <br>
+                        + Access to Library Plus for PYQs of Top Companies</p>
+                </div>
+                <div class="crs_pricing flex justify-between mb-3">
+                    <h1 class="font-medium">by Shraddha Khapada</h1>
+                    <h1 class="font-medium">₹ 5,750.00</h1>
+                </div>
+                <button
+                    class="px-6 py-2 bg-orange-500 text-lg font-medium rounded-md w-full hover:text-orange-500 hover:bg-transparent hover:border border-orange-500">
+                    Enroll Now<i class="ri-arrow-right-s-line text-lg"></i><i
+                        class="-ml-3 text-lg ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+            <div class="card sm:mt-0 mt-16  sm:h-full w-[100vw] sm:w-[25vw] bg-black rounded-lg text-center p-2">
+                <div class="crs_img2 bg-red-300 min-h-[28vh] ">
+                </div>
+                <div class="course_drescn mt-3">
+                    <h1 class="text-2xl font-semibold mb-5">Get Placement Ready with <br> Shradha Ma'am</h1>
+                    <p class="text-sm font-light leading-tight mb-6 mt-4">Learn Web Development(MERN) + Data Structures
+                        <br>
+                        & Algorithms(Java) </p>
+                </div>
+                <div class="crs_pricing flex justify-between mb-4">
+                    <h1 class="font-medium">by Shraddha Khapada</h1>
+                    <h1 class="font-medium">₹ 8,999.00</h1>
+                </div>
+                <button
+                    class="px-6 py-2 bg-orange-500 text-lg font-medium rounded-md w-full hover:text-orange-500 hover:bg-transparent hover:border border-orange-500">
+                    Join New Sigma 2.0<i class="ri-arrow-right-s-line text-lg"></i><i
+                        class="-ml-3 text-lg ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+            <div class="card sm:mt-0 mt-16   sm:h-full w-[100vw] sm:w-[25vw] bg-black rounded-lg text-center p-2">
+                <div class="crs_img3 bg-red-300 min-h-[28vh] ">
+                </div>
+                <div class="course_drescn mt-3">
+                    <h1 class="text-2xl font-semibold ">Learn Website <br> Development in 4.5 <br> Months!</h1>
+                    <p class="text-sm font-light leading-tight mb-4 mt-4">Delta 2024 - for Beginners & Pro Developers
+                    </p>
+                </div>
+                <div class="crs_pricing flex justify-between mb-3">
+                    <h1 class="font-medium">by Shraddha Khapada</h1>
+                    <h1 class="font-medium ">₹ 6,780.00 </h1>
+                </div>
+                <button
+                    class="px-6 py-2 bg-orange-500 text-lg font-medium rounded-md w-full hover:text-orange-500 hover:bg-transparent hover:border border-orange-500">
+                    Join New Delta 4.0<i class="ri-arrow-right-s-line text-lg"></i><i
+                        class="-ml-3 text-lg ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="studentplaced w-full h-screen flex gap-5 flex-col items-center justify-center text-white ">
+            <h1 class="text-2xl font-semibold font-[NeueMachina]">Placed Students</h1>
+            <div class="stdcardcontainer sm:w-2/3 w-full sm:h-3/4 h-[60vh] sm:p-1 p-2 flex">
+                <div class="col w-1/3 h-full  sm:p-2 overflow-hidden">
+                   <div class="carde w-full -translate-y-[50%]">
+            
+                   </div>
+                </div>
+                <div class="col w-1/3 h-full sm:p-2 overflow-hidden">
+                    <div class="cardes w-full ">
+            
+                    </div>
+                </div>
+                <div class="col w-1/3 h-full sm:p-2 overflow-hidden">
+                    <div class="cards w-full -translate-y-[50%]">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page4 sm:h-screen w-full sm:flex overflow-hidden">
+            <div class="page4-left sm:w-1/2 sm:h-full h-[65vh] flex items-center justify-center">
+                <div class="cir sm:h-[40vw] sm:w-[40vw] h-[70vw] w-[70vw] rounded-full bg-orange-600 relative">
+                    <div
+                        class="number-card h-[15%] w-[55%] text-[10px] sm:text-base text-white` flex items-center justify-center flex-col rounded-md absolute bottom-[10%] -left-[10%]">
+                        <h2>Need to know more details?</h2>
+                        <h2><i class="ri-phone-fill text-[#faa307]"></i> +91 011-2553-2553</h2>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="page4-right sm:w-1/2 sm:h-full w-screen py-10 flex flex-col justify-center sm:pl-[3%] sm:pr-[10%] px-[8%] gap-4">
+                <h2 class="text-xl font-semibold text-[#FB923C] ml-5">About Us</h1>
+                    <h1 class="text-4xl font-bold text-white">Creating a Lifelong Learning Best Community</h1>
+                    <p class="text-white font-normal">
+                        A Lifelong Learning Best Community is a vibrant and inclusive space where individuals from
+                        diverse backgrounds and ages come together to pursue their love of learning.</p>
+
+
+                    <div class=" w-full h-[15%] border rounded-xl flex sm:items-stretch items-center gap-5 p-3">
+                        <div class="card-logo sm:w-1/6 w-28 sm:h-auto h-24 rounded-xl overflow-hidden"><img
+                                src="./resources/flexibleclasses.jpg" alt=""></div>
+                        <div class="card-container w-full">
+                            <h1>Flexible Classes</h1>
+                            <p>Flexible classes offer a revolutionary approach to learning, breaking free from
+                                traditional constraints of time and space.</p>
+                        </div>
+                    </div>
+
+                    <div class=" w-full h-[15%] border rounded-xl flex sm:items-stretch items-center gap-5 p-3">
+                        <div class="card-logo sm:w-1/6 w-28 sm:h-auto h-24 rounded-xl overflow-hidden"><img
+                                src="./resources/liveclasses.jpg" alt=""></div>
+                        <div class="card-container w-full">
+                            <h1>Live Class From Anywhere</h1>
+                            <p>Represents the ultimate freedom to learn and connect in real-time, regardless of
+                                geographical boundaries.</p>
+                        </div>
+                    </div>
+
+                    <button class=" w-40 py-2 rounded-md bg-[#FB923C] text-white"> Discover More <i
+                            class="ri-arrow-right-line"></i></button>
+
+            </div>
+        </div>
+
+        <!-- place here  -->
+
+        <div class="container   w-full sm:h-[55vh] flex items-center justify-center px-5">
+            <div
+                class="page3_up text-white border   rounded-xl sm:my-32 sm:h-[50vh] overflow-hidden w-full sm:flex items-center sm:pt-10  mt-20 bg-black text-white">
+            
+                <div class="page3_left sm:pt-20 flex flex-col items-center w-full sm:w-[50%] h-[100%]">
+                    <div class=" h-10 w-[60%] overflow-hidden relative sm:mb-5 sm:pl-20 pl-10 mt-10 sm:mt-0 ">
+                        <h1 class="h1 sm:text-4xl text-xl  font-semibold absolute top-[100%]">Exclusive Coach
+                        </h1>
+                        <h1 class="h1 sm:text-4xl text-xl  font-semibold absolute top-[100%]">Creative Minds
+                        </h1>
+                        <h1 class="h1 sm:text-4xl text-xl  font-semibold absolute top-[100%]">Video Tutorials
+                        </h1>
+                        <h1 class="h1 sm:text-4xl text-xl  font-semibold absolute top-[100%]">Doubt Session
+                        </h1>
+                    </div>
+                    <div class=" sm:h-6 h-5 sm:pl-20 pl-3 w-[100%]  overflow-hidden relative font-thin">
+                        <h1 class="h2 sm:text-lg text-base  leading-5 absolute top-[100%]">provides expert
+                            guidance and
+                            mentorship in technology and software </h1>
+                        <h1 class="h2 sm:text-lg text-base  leading-5 absolute top-[100%]">Groups who
+                            demonstrate
+                            exceptional creativity, innovation, and </h1>
+                        <h1 class="h2 sm:text-lg text-base  leading-5 absolute top-[100%]">Video tutorials are
+                            instructional videos that guide viewers through</h1>
+                        <h1 class="h2 sm:text-lg text-base  leading-5 absolute top-[100%]">A doubt session is a
+                            dedicated time where learners can ask questions</h1>
+                    </div>
+                    <div class=" h-5 sm:pl-20 pl-3 w-[100%] overflow-hidden relative font-thin">
+                        <h1 class="h3 text-lg  leading-5 absolute top-[100%]">development, helping teams
+                            improve their technical skills, adopt best</h1>
+                        <h1 class="h3 text-lg  leading-5 absolute top-[100%]">in their thinking and work.
+                            These people often excel in generating </h1>
+                        <h1 class="h3 text-lg  leading-5 absolute top-[100%]">specific tasks, skills,
+                            concepts. They are an effective way to learn</h1>
+                        <h1 class="h3 text-lg  leading-5 absolute top-[100%]">and clarify their
+                            uncertainties on specific topics.These sessions are </h1>
+                    </div>
+                    <div class=" h-5 sm:pl-20 pl-3 w-[100%] overflow-hidden relative font-thin">
+                        <h1 class="h4 text-lg  leading-5 absolute  top-[100%]">practices, and enhance their
+                            overall productivity.</h1>
+                        <h1 class="h4 text-lg  leading-5 absolute top-[100%]">ideas, solving problems in
+                            novel ways, and contributing to artistic.</h1>
+                        <h1 class="h4 text-lg  leading-5 absolute top-[100%]">because they combine visual
+                            and auditory elements</h1>
+                        <h1 class="h4 text-lg  leading-5 absolute top-[100%]">facilitated by expert or
+                            instructor who provides detailed explanations</h1>
+                    </div>
+    
+                    <div class="flex sm:flex-row flex-col ">
+                        <button class="text-lg  font-medium px-5 py-2 bg-[#faa307] mt-5 rounded mr-16 ml-16 sm:ml-0">Know
+                            more.</button>
+                        <button class="next glow-on-hover text-lg font-medium px-5 py-2 border border-white active:scale-95 mt-5 rounded mr-16 ml-16 sm:ml-0">Click Me!</button>
+                    </div>
+                    
+                </div>
+    
+                <div
+                    class="page3_right  sm:w-[50%] w-full h-[100%] flex  justify-center mt-5 sm:mb-0 mb-10 sm:mt-0">
+                    <div class="icons sm:h-72 h-40 sm:w-72 w-40 relative overflow-hidden rounded shadow-lg shadow-slate-600 ">
+                        <img class="sm:h-72 h-40 absolute sm:top-72 top-40" src="./resources/exclusive_coach.webp" alt="">
+                        <img class="sm:h-72 h-40 absolute sm:top-72 top-40" src="./resources/creative_minds.jpeg" alt="">
+                        <img class="sm:h-72 h-40 absolute sm:top-72 top-40" src="./resources/video_tutorials.jpeg" alt="">
+                        <img class="sm:h-72 h-40 absolute sm:top-72 top-40" src="./resources/doubt_session.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page5 bg-black h-screen w-full flex items-center justify-center flex-col gap-20 overflow-hidden">
+            <h1 class="sm:text-5xl text-4xl text-white text-center sm:w-[45vw] w-[85vw]">Thousand of Student achieved
+                their <span class="text-orange-500 italic">dream job at</span> </h1>
+            <div class="companies">
+                <div class="flex items-center justify-center sm gap-5 bg-black">
+                    <img class=" drop-shadow-xl h-[4vw]" src="./resources/companies logo/google_logo.webp" alt="">
+                    <img class=" drop-shadow-xl h-[10vw]" src="./resources/companies logo/amazon_logo.webp" alt="">
+                    <img class=" drop-shadow-xl h-[2vw]" src="./resources/companies logo/microsoft_logo.webp" alt="">
+                    <img class=" drop-shadow-xl h-[3vw]" src="./resources/companies logo/samsung_logo.webp" alt="">
+                </div>
+                <div class="flex items-center justify-center mt-5 gap-5 bg-black">
+                    <img class="h-[7vw]" src="./resources/companies logo/dell_logo.webp" alt="">
+                    <img class="h-[7vw]" src="./resources/companies logo/isro_logo.webp" alt="">
+                    <img class="h-[7vw]" src="./resources/companies logo/gfg_logo.webp" alt="">
+                    <img class="h-[7vw]" src="./resources/companies logo/mercedesbenz_logo.webp" alt="">
+                    <img class="h-[7vw]" src="./resources/companies logo/tcs_logo.webp" alt="">
+                    <img class="h-[7vw]" src="./resources/companies logo/wallmart_logo.webp" alt="">
+                    <img class="h-[7vw]" src="./resources/companies logo/wipro_logo.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="page6 w-full relative">
+            <div class="inner-page1 sm:h-screen w-full sticky top-0 left-0 flex text-white overflow-hidden">
+                <div class="inner-page-left sm:w-1/2 w-full h-full bg-[#212529] sm:px-0 sm:pl-28 px-5  py-24 overflow-hidden">
+                    <div class="flex flex-col items-start sm:w-[70%] w-full">
+                        <h1 class="sm:text-4xl text-3xl font-bold mb-4">Dedicated Placement Assistance</h1>
+                        <p class="text-lg  sm:mb-8">Empower your career journey and enhance your abilities with job-focused
+                            courses</p>
+                        <div class="flex space-x-4 mt-8 mb-8">
+                            <img src="https://imgs.search.brave.com/3ybwubDntuZBDUOMasHRPhNHiWst-jceLPuqXEmzWrY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2E5L0FtYXpvbl9s/b2dvLnN2Zw"
+                                alt="Amazon" class="sm:h-10 h-7">
+                            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                                alt="Google" class="sm:h-10 h-7 shrink-0">
+                            <img src="https://imgs.search.brave.com/Mp1E-4ncb1lsVP2Ul0Y_XfqRwmEzkppa699X2quA2zc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy93YWxtYXJ0LnN2/Zw"
+                                alt="Walmart" class="sm:h-10 h-7">
+                        </div>
+                        <div class="flex space-x-4 mb-8">
+                            <img  src="https://imgs.search.brave.com/WrQwMJz-w0bEDv1MJqk3o08voQpBMiG2VG3_p1yqE4k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/c2FyY2hpdmUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzA4L01pY3Jvc29m/dC1sb2dvLnN2Zw"
+                                alt="Microsoft" class="sm:h-10 h-7">
+                            <img src="https://imgs.search.brave.com/6ytzNJD41POcPuHl_T-44x8CCRCjSBC7K8WOBlkkVIU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2IxL0xpbmtlZElu/X0xvZ29fMjAxM18o/Mikuc3Zn"
+                                alt="LinkedIn" class="sm:h-10 h-7">
+                        </div>
+                        <p class=" mb-16">& more...</p>
+                        <button class="bg-white text-[#3B7652] font-bold py-2 px-8 rounded">Explore →</button>
+                        <button class="text-white font-bold py-2 px-4 rounded mt-4">SKIP →</button>
+                    </div>
+                </div>
+                <div class="inner-page-right sm:block hidden sm:w-1/2 w-full h-full bg-red-300 overflow-hidden">
+                    <img class="h-full w-full" src="./resources/your career our mission.jpg" alt=""></div>
+
+                <div
+                    class="inner-page-circle sm:flex hidden h-[15vw] w-[15vw] rounded-full absolute top-1/2 left-1/2 bg-[#39434e] -translate-x-1/2 -translate-y-1/2 items-center justify-center text-2xl font-semibold">
+                    <h1>"Your Career<br>Our Mission"</h1>
+                </div>
+            </div>
+
+            <div class="inner-page2 sm:h-screen w-full sticky top-0 left-0 flex text-white">
+                <div class="inner-page-left sm:w-1/2 w-full h-full bg-[#343a40] sm:px-0 px-5 sm:pl-28 py-24 overflow-hidden">
+                    <div class="flex flex-col items-start sm:w-[70%] w-full">
+                        <h1 class="sm:text-4xl text-3xl font-bold mb-4">Industry-Focused Curriculum</h1>
+                        <p class="text-lg  mb-8">Learn, upskill and unleash your potential to become a market-ready
+                            professional!</p>
+
+                        <div class=" flex gap-20 my-10">
+                            <div class=" text-center">
+                                <h1 class="text-3xl text-green-200">100+ Hrs</h1>
+                                <h2 class="">Course</h2>
+                            </div>
+                            <div class=" text-center">
+                                <h1 class="text-3xl text-green-200">100+ Hrs</h1>
+                                <h2 class="">Course</h2>
+                            </div>
+                        </div>
+
+                        <button class="bg-white text-[#3B7652] font-bold py-2 px-8 rounded">Explore →</button>
+                        <button class=" text-white font-bold py-2 px-4 rounded mt-4">SKIP →</button>
+                    </div>
+
+                </div>
+                <div class="inner-page-right sm:block hidden w-1/2 h-full bg-red-400 overflow-hidden"><img
+                        class="h-full w-full" src="./resources/fingertip.jpg" alt=""></div>
+                <div
+                    class="inner-page-circle sm:flex hidden h-[15vw] w-[15vw] rounded-full absolute top-1/2 left-1/2 bg-[#444f5a] -translate-x-1/2 -translate-y-1/2 items-center justify-center text-2xl font-semibold">
+                    <h1 class="text-center">“Market-Ready <br>
+                        Skills At Your <br>
+                        Fingertips”</h1>
+                </div>
+            </div>
+
+            <div class="inner-page3 sm:h-screen w-full sticky top-0 left-0 flex text-white">
+                <div class="inner-page-left sm:w-1/2 w-full h-full bg-[#495057] sm:px-0 px-5 sm:pl-28 py-24 overflow-hidden">
+                    <div class="flex flex-col items-start sm:w-[70%] w-full">
+                        <h1 class="sm:text-4xl text-3xl font-bold mb-4">Courses For Every <br> Budget</h1>
+                        <p class="text-lg  mb-8">Find courses that fit all your needs and are available at competitive
+                            prices!</p>
+
+                        <div class="flex gap-16 mb-20">
+                            <div class="flex flex-col items-center justify-center"><img class="w-[40px]"
+                                    src="https://pwskills.com/images/homePage/free.svg" alt="">
+                                <h3>Free</h3>
+                            </div>
+                            <div class="flex flex-col items-center justify-center"><img class="w-[40px]"
+                                    src="https://pwskills.com/images/homePage/premium.svg" alt="">
+                                <h3>Premium</h3>
+                            </div>
+                            <div class="flex flex-col items-center justify-center"><img class="w-[40px]"
+                                    src="https://pwskills.com/images/homePage/pocket-freindly.svg" alt="">
+                                <h3>Pocket Friendly</h3>
+                            </div>
+                        </div>
+
+                        <button class="bg-white text-[#8D558B] font-bold py-2 px-8 rounded">Explore →</button>
+                        <button class=" text-white font-bold py-2 px-4 rounded mt-4">SKIP →</button>
+                    </div>
+
+                </div>
+                <div class="inner-page-right sm:block hidden w-1/2 h-full bg-red-400 overflow-hidden"><img
+                        class="h-full w-full" src="./resources/rightSkill.jpeg" alt="">
+                </div>
+                <div
+                    class="inner-page-circle sm:flex hidden h-[15vw] w-[15vw] rounded-full absolute top-1/2 left-1/2 bg-[#42505e] -translate-x-1/2 -translate-y-1/2 items-center justify-center text-2xl font-semibold">
+                    <h1 class="text-center">“Ensuring Your <br>
+                        Right To Skills & <br>
+                        Opportunities”
+                </div>
+            </div>
+
+            <div class="inner-page4 sm:h-screen w-full sticky top-0 left-0 flex text-white overflow-hidden">
+                <div class="inner-page-left sm:w-1/2 w-full h-full bg-[#6c757d] sm:px-0 px-5 sm:pl-28 py-24 overflow-hidden">
+                    <div class="flex flex-col items-start sm:w-[70%] w-full">
+                        <h1 class="sm:text-4xl text-3xl font-bold mb-4">Top-Notch Experts For Every Domain</h1>
+                        <p class="text-lg  mb-8">Be it Tech, Business, or Finance – <br>
+                            receive guidance and support at <br>
+                            every step!</p>
+
+                        <div class="flex gap-16 mb-20">
+                            <div class="flex flex-col items-center justify-center">
+                                <img class="w-[40px]"
+                                    src="https://pwskills.com/images/homePage/code.svg" alt="">
+                                <h3 class="text-center">Software <br>Engineering</h3>
+                            </div>
+                            <div class="flex flex-col items-center justify-center"><img class="w-[40px]"
+                                    src="https://pwskills.com/images/homePage/bank.svg" alt="">
+                                <h3 class="text-center">Banking <br>Finance</h3>
+                            </div>
+                            <div class="flex flex-col items-center justify-center"><img class="w-[40px]"
+                                    src="https://pwskills.com/images/homePage/data-analytics.svg" alt="">
+                                <h3 class="text-center">Data <br>Analytics</h3>
+                            </div>
+                        </div>
+
+                        <button class="bg-white text-[#9F4C6A] font-bold py-2 px-8 rounded">Explore →</button>
+                        <button class=" text-white font-bold py-2 px-4 rounded mt-4">SKIP →</button>
+                    </div>
+
+                </div>
+                <div class="inner-page-right sm:block hidden w-1/2 h-full bg-red-400 overflow-hidden "><img
+                        class="h-full w-full" src="./resources/choose path.jpeg" alt=""></div>
+                <div
+                    class="inner-page-circle sm:flex hidden h-[15vw] w-[15vw] rounded-full absolute top-1/2 left-1/2 bg-[#5d7183] -translate-x-1/2 -translate-y-1/2  items-center justify-center text-2xl font-semibold">
+                    <h1 class="text-center">“We Support The <br>
+                        Path You <br>
+                        Choose”
+                </div>
+            </div>
+        </div>
+
+        <div class="main-footer overflow-hidden">
+            <div class="mx-auto w-[90vw] h-[1px] border-[#dadada] border-t mt-2"></div>
+            <div class="footer sm:h-[60vh] w-full bg-black sm:flex items-center px-5 sm:py-0 pb-5 sm:pl-24">
+                <div class="one sm:h-[80%] h-[30%] w-full flex flex-col sm:pt-20 pt-5">
+                    <h1 class="sm:text-4xl text-2xl font-bold text-[#FFA511]">Apna </h1>
+                    <h1 class="sm:text-4xl text-2xl font-bold text-white">College</h1>
+                    <p class="text-white tracking-tighter sm:my-5 my-2">Where education meets real-world needs.</p>
+                    <div class="icons flex text-white text-2xl gap-8">
+                        <i class="hover:text-[#FFA511] duration-500 ri-instagram-fill"></i>
+                        <i class="hover:text-[#FFA511] duration-500 ri-linkedin-box-fill"></i>
+                        <i class="hover:text-[#FFA511] duration-500 ri-discord-fill"></i>
+                        <i class="hover:text-[#FFA511] duration-500 ri-youtube-fill"></i>
+                        <i class="hover:text-[#FFA511] duration-500 ri-twitter-fill"></i>
+                    </div>
+                </div>
+                <div class="two sm:h-[70%] w-full h-[40%] text-white sm:pt-20 pt-5">
+                    <h1 class="text-xl font-semibold py-2">COMPANY</h1>
+                    <div>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">About Us
+                        </h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">Support
+                        </h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">Privacy
+                            Policy</h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">Term and
+                            Condition</h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">Pricing
+                            and
+                            Refund</h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">Hire
+                            From us
+                        </h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">Bug
+                            Bounty
+                        </h2>
+                    </div>
+                </div>
+                <div class="three sm:h-[70%] w-full text-white sm:pt-20 pt-5">
+                    <h1 class="text-xl font-semibold py-2">Quick Links</h1>
+                    <div>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">Courses
+                        </h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">
+                            DevChallenge
+                        </h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">Labs
+                        </h2>
+                    </div>
+                </div>
+                <div class="four sm:h-[70%] w-full h-[40%] text-white sm:pt-20 pt-5">
+                    <h1 class="text-xl font-semibold py-2">Get In Touch</h1>
+                    <div>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">+91
+                            9874-569-569,</h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">+91
+                            1234-562-589</h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">
+                            alpha@apnacollege.in</h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">
+                            delta@apnacollege.in</h2>
+                        <h2 class="tracking-tighter font-thin hover:text-[#FFA511] cursor-pointer duration-500">
+                            sigma@apnacollege.in</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto w-[90vw] h-[1px] border-[#dadada] border-t"></div>
+            <div class=" text-sm text-[white] text-center my-5 pb-5 px-5 mx-auto">Copyright © 2024 ApnaCollege Pvt
+                Ltd.<br>
+                All
+                Rights Reserved.
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- gsap cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ScrollTrigger cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/helix.js"></script>
+    <!-- lenix cdn  -->
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
